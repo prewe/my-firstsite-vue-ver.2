@@ -85,6 +85,9 @@ export default {
 
 <style lang="scss">
 
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -97,6 +100,7 @@ export default {
   height: 100vh;
   color: #fff;
   overflow: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
 .arrow {
@@ -145,6 +149,7 @@ export default {
 }
 
 .menu {
+  font-family: 'Anton', sans-serif;
   position: absolute;
   width: 100%;
   height: 80%;
@@ -158,6 +163,7 @@ export default {
   transform: translateY(-50%) translateX(50%);
   list-style: none;
   transition: 1s;
+  
 }
 
 .open-menu-fix {
@@ -264,6 +270,16 @@ export default {
 
 .main-menu-enter, .main-menu-leave-to {
     opacity: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .menu__item { 
+    height: 70px;
+    a {
+      line-height: 70px;
+    } 
+  }
+  
 }
 
 </style>
